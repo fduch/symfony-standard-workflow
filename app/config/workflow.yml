@@ -1,0 +1,19 @@
+# in order to use new-style configuration of workflow (after state-machine implementation) please refer to master branch
+workflow:
+    workflows:
+        order_publishing:
+            marking_store:
+                type: property_accessor
+            supports:
+                - AppBundle\Entity\Order
+            places:
+                - draft
+                - spellchecked
+                - published
+            transitions:
+                spellcheck:
+                    from: draft
+                    to:   spellchecked
+                publish:
+                    from: spellchecked
+                    to:   published
