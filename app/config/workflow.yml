@@ -1,9 +1,9 @@
-# in order to use new-style configuration of workflow (after state-machine implementation) please refer to master branch
+# in order to use old-style configuration of workflow (before state-machines implementations) please refer to master branch
 workflow:
     workflows:
         order_publishing:
             marking_store:
-                type: property_accessor
+                type: multiple_state
             supports:
                 - AppBundle\Entity\Order
             places:

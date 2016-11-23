@@ -18,7 +18,7 @@
         "sensio/framework-extra-bundle": "^3.0.2",
         "incenteev/composer-parameter-handler": "~2.0",
 
-        "fduch/workflow-bundle": "^1.0",
+        "fduch/workflow-bundle": "^2.0",
         "symfony/workflow": "^3.2@dev"
     },
     "require-dev": {
